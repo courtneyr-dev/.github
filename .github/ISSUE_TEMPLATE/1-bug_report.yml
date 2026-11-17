@@ -1,0 +1,57 @@
+name: Bug report
+description: Something doesn't work the way the docs say it should.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. For a security problem, don't use this form: follow SECURITY.md instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected to see instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Plugin or theme version
+      placeholder: "1.2.3"
+    validations:
+      required: true
+  - type: input
+    id: wordpress
+    attributes:
+      label: WordPress and PHP versions
+      placeholder: "WordPress 7.1, PHP 8.3"
+    validations:
+      required: true
+  - type: input
+    id: theme
+    attributes:
+      label: Active theme
+  - type: textarea
+    id: errors
+    attributes:
+      label: Error messages
+      description: From the browser console or the PHP error log, if any.
+      render: shell
+  - type: checkboxes
+    id: tried
+    attributes:
+      label: What I've tried
+      options:
+        - label: Tested with only this plugin active
+        - label: Tested with a default theme (Twenty Twenty-Five)
+        - label: Cleared site and browser caches

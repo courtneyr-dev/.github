@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/courtneyr-dev/.github/blob/main/SECURITY.md
+    about: Report privately from the repository's Security tab. Don't open a public issue.
+  - name: Ask the IndieWeb community
+    url: https://chat.indieweb.org/
+    about: Questions about Webmentions, microformats, POSSE, and other IndieWeb concepts.

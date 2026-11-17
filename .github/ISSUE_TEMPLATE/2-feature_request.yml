@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest a new feature or a change to an existing one.
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe what you're trying to do and what gets in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What have you tried instead?
+      description: Workarounds, other plugins, or other approaches.
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Can you help?
+      options:
+        - label: I can test it
+        - label: I can help write the code
+        - label: I can help with the documentation
